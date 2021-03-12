@@ -6,12 +6,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HairSalon.Controllers
 {
-  public class ClientsController : Controller
+  public class StylistsController : Controller
   {
     private readonly HairSalonContext _db;
-    public ClientsController(HairSalonContext db)
+    public StylistsController(HairSalonContext db)
     {
       _db = db;
+    }
+    public ActionResult Index()
+    {
+      List<
     }
   }
 }
