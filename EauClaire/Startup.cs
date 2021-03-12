@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using Bestaurants.Models;
+using EauClaire.Models;
 
 
-namespace Bestaurants
+namespace EauClaire
 {
   public class Startup
   {
@@ -25,7 +25,7 @@ namespace Bestaurants
     {
       services.AddMvc();
       services.AddEntityFrameworkMySql()
-        .AddDbContext<BestaurantsContext>(options => options
+        .AddDbContext<EauClaireContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
     }
 
