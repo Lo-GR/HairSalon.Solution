@@ -42,6 +42,12 @@ namespace HairSalon.Controllers
       ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
       return View(thisClient);
     }
-    
+    [HttpPost]
+    public ActionResult Edit(Client client)
+    {
+      _db.Entry(client).State = EntityState.Modified;
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
   }
 }
