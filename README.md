@@ -11,7 +11,6 @@
 * **C# 9**
 * **.NET 5.0.102**
 * **SDK 8.0.19**
-* **MS Test**
 * **Razor**
 * **Bootstrap 4.5**
 * **HTML 5 (CS version)/CSS3**
@@ -22,7 +21,6 @@
 ## _Concepts Used_ 🧠
 
 * **MVC**
-* **TDD**
 * **RESTful Conventions**
 * **CRUD Functionality**
 * **Database Retrieval/Storage**
