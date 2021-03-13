@@ -15,7 +15,7 @@
 * **Razor**
 * **Bootstrap 4.5**
 * **HTML 5 (CS version)/CSS3**
-* **My SQL 8.0/WorkBench**
+* **My SQL 8.0.19/WorkBench 8.0.19**
 * **Entity Framework**
 * **HTML Helper**
 
@@ -32,21 +32,33 @@ This MVC webpage will present it's user with a splash screen and options to
 
 This is a practice project for practicing C#, Razor, ASP .NET framework, and MVC for a course at Epicodus.
 
-## _Use Guide and Installation_
+## _Installation Guide_
+### _Cloning and Initial Setup_
 
 > Repository: https://github.com/Lo-GR/HairSalon.Solution.git
 1. In your terminal of choice or [GitHub's Desktop Application](https://desktop.github.com/) , clone the above repository from Github. For further explanation on how to clone this repository, please visit [GitHub's Documentation](https://docs.github.com/en/github/using-git/which-remote-url-should-i-use).
 2. Ensure you are running .NET Core SDK by using the command dotnet --version in your terminal. If a version number is not presented, please visit [this download page for .NET 5 and install the applicable software for your OS](https://dotnet.microsoft.com/download/dotnet/5.0). 
-3. Once you verify you are running a .NET 5, navigate in your terminal to PierreBakery2 directory within the PierreBakery2.Solution directory you just cloned. Once there, run "dotnet build" in your terminal to build application within directory. 
-4. In your terminal, while still in PierreBakery2 directory, run "dotnet restore" and then "dotnet run." The terminal will present local host routes for you to navigate to in your browser. An example would be "http://localhost:5000." Enter this into a web browser of choice to use this application. Keep the terminal running as it is being used to control the local server.
-5. When finished, exit the terminal or use the command "CTRL C"(Windows) or "CMD C"(Mac) to shut down the local server.
-6. Open the PierreBakery.Solution directory in a text editor of your choice to view the code.
+3. Once you verify you are running a .NET 5, navigate in your terminal to HairSalon directory within the HairSalon.Solution directory you just cloned. Once there, run "dotnet build" in your terminal to build application within directory. 
+4. In your terminal, while still in HairSalon directory, run "dotnet restore."
+5. You will require a text or code editor to complete the following steps. [VS Code is recommended](https://code.visualstudio.com/)
 
-To engage with testing regarding this application, please read below.
 
-### _Testing Guide_
-1. Navigate to the PierreBakery2.Tests directory within your terminal. Once there, run the command "dotnet restore" in order restore the required features for testing.
-2. "dotnet test" will test the Models programmed in PierreBakery2.
+### _Installation: Database Recreation_
+
+1. Ensure you are running MySQL Server 8 and MySQL WorkBench 8. If you are running windows, use the [Windows Installer ](https://dev.mysql.com/downloads/installer/) for MySQL and follow the instructions provided by the installer. For Macs, visit [MySQL Commuinity Downloads](https://dev.mysql.com/downloads/mysql/) and select macOS from the Operation Systems. This will be a manual installation. If you need additonal assistance on this, please visit Epicodus's [Learn How to Program Article](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql).
+2. Once you verify you have SQL installed, import the database structure and example data dump named "logan_roth.sql" in the root directory. In order to do this, open MySQL Workbench and navigate to a server. Then open the Administration tab in the Navigator window. Select Data Import/Restore. In Import Options, select "Import from Self-Contained File". Navigate to the file mentioned above and then click "Start Import." This should create a copy of the database used to make this application. 
+3. Create a file called "appsettings.json" in the root directory HairSalon.Solution. Paste the following into this file.
+```
+{
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port={PORT OF SERVER};database=logan_roth;uid=root;pwd={PASSWORD OF SERVER};"
+  }
+}
+```
+### _Installation: General Use_
+
+1. Back in your terminal in the HairSalon production directory, type "dotnet run." The terminal will present local host routes for you to navigate to in your browser. An example would be "http://localhost:5000." Enter this into a web browser of choice to use this application. Keep the terminal running as it is being used to control the local server.
+2. When finished, exit the terminal or use the command "CTRL C"(Windows) or "CMD C"(Mac) to shut down the local server.
 
 ## _Known Bugs_
 * No known bugs at this time. Please contact a contributor to report any bugs found during use.
