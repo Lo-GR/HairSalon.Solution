@@ -1,12 +1,12 @@
-# **Eau Claire Hair Salon Client and Stylist Tracker**
+# <div align="center"> **Eau Claire Hair Salon Client and Stylist Tracker** </div>
 ### This is a web application in order to track Stylists and Clients
 
  ### _Contributor(s) and Contact Info_
 > Logan Roth diamondintheroth@gmail.com - [GitHub(Lo-GR)](https://github.com/Lo-GR)
 
-<br/>
+---
 
-## _Technologies Used_
+## _Technologies Used_ ⚙
 
 * **C# 9**
 * **.NET 5.0.102**
@@ -19,7 +19,7 @@
 * **Entity Framework**
 * **HTML Helper**
 
-## _Concepts Used_
+## _Concepts Used_ 🧠
 
 * **MVC**
 * **TDD**
@@ -27,12 +27,20 @@
 * **CRUD Functionality**
 * **Database Retrieval/Storage**
 
-## _Description_
-This MVC webpage will present it's user with a splash screen and options to 
+---
 
-This is a practice project for practicing C#, Razor, ASP .NET framework, and MVC for a course at Epicodus.
+## _Description_ 📃
+This MVC webpage will present it's user with a splash screen and options to view Stylist or Client indexes. All CRUD functionality is present for both Stylist and Client data and options are presented in an explorable fashion on the webpage. 
 
-## _Installation Guide_
+This is a practice project for practicing C#, Razor, ASP .NET framework, Entity Framework, MySQl, Databases and MVC for a course at Epicodus.
+
+---
+
+## _Installation Guide_ 💻 
+
+<details>
+<summary>Open for full Guide</summary>
+
 ### _Cloning and Initial Setup_
 
 > Repository: https://github.com/Lo-GR/HairSalon.Solution.git
@@ -60,15 +68,23 @@ This is a practice project for practicing C#, Razor, ASP .NET framework, and MVC
 1. Back in your terminal in the HairSalon production directory, type "dotnet run." The terminal will present local host routes for you to navigate to in your browser. An example would be "http://localhost:5000." Enter this into a web browser of choice to use this application. Keep the terminal running as it is being used to control the local server.
 2. When finished, exit the terminal or use the command "CTRL C"(Windows) or "CMD C"(Mac) to shut down the local server.
 
-## _Known Bugs_
+</details>
+
+---
+
+## _Known Bugs_ 🩹
 * No known bugs at this time. Please contact a contributor to report any bugs found during use.
 
-## _Future Updates_
-* Additional UI
-* A feature to edit or remove Orders
-* A feature to edit or remove Vendors and all associated Orders
+---
 
-## _Preplanning/Whiteboard Work_
+## _Future Updates_ 🛠
+* Additional UI
+* A feature to search and retrieve Stylists or Clients
+* A feature to sort data
+
+---
+
+## _Preplanning/Whiteboard Work_ 📋
 ```
 Expectations___
 - User able to see list of all Stylists
@@ -90,10 +106,11 @@ Functionality___
 - Splash page with links to various details
 - Stylists/Categories, Clients/Items
 ```
+---
 
-## _License_
+## _License_ ⚖️
 
-[_MIT_](https://opensource.org/licenses/MIT)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
 Copyright (c) 2021, Logan Roth.
 
