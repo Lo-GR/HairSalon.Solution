@@ -108,7 +108,7 @@ Functionality___
 
 ## _License_ ⚖️
 
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Copyright (c) 2021, Logan Roth.
 
